@@ -24,7 +24,7 @@ Procedure:
 * Put into a `DataFrame`
 * Make the `DataFrame` tidy by melting
 * Create an `hv.Dataset` where the independent vars are the x coordinate and the sigma parameter and the dependent value is the pdf at an x
-* Plot an arbitrary HoloViews plot using `dataset.to(hv.ElementType, kdims=['independent_var(s)'], vdims=['dependent_var(s)']
+* Plot an arbitrary HoloViews plot using `dataset.to(hv.ElementType, kdims=['independent_var(s)'], vdims=['dependent_var(s)']`
 * If you don't specify all the kdims in the dataset as arguments to the `.to()` method, they will be used to generate an `hv.HoloMap`. 
 * If you want to instead overlay curves with different values of an independent var (e.g., the sigma parameter), use the `.overlay('your_overlay_kdim')
 
