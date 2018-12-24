@@ -4,7 +4,7 @@
 
 Using the `.to()` declarative syntax: plotting multiple Gaussians of different sigma with `pd.DataFrame`s and `hv.Dataset`s. This is a demonstration of how to visualize `DataFrame`-based data in HoloViews
 
-Proceedure:
+Procedure:
 * Calculate the pdfs
 * Put into a `DataFrame`
 * Make the `DataFrame` tidy by melting
