@@ -13,6 +13,7 @@ In the case that you are concatenating two plots through the `*` operator, for e
     hv.Element(data, kdims=[blah], vdims=[blah], label='the first legend entry')
     * hv.Element(data, kdims=[blah], vdims=[blah], label='the second legend entry')
 )
+```
 
 ## Operating in a declarative, hv.Dataset-based regime
 
