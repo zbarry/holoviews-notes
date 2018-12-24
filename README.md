@@ -1,5 +1,19 @@
 # HoloViews tips
 
+This is my ongoing compilation of HoloViews snippets to accomplish particular tasks. One day this will actually be decently organized.
+
+## Legends
+
+`my_dataset.to(hv.DesiredElement).overlay('a_kdim')` will automatically generate a legend
+
+In the case that you are concatenating two plots through the `*` operator, for example, you can add legends like:
+
+```python
+(
+    hv.Element(data, kdims=[blah], vdims=[blah], label='the first legend entry')
+    * hv.Element(data, kdims=[blah], vdims=[blah], label='the second legend entry')
+)
+
 ## Operating in a declarative, hv.Dataset-based regime
 
 Using the `.to()` declarative syntax: plotting multiple Gaussians of different sigma with `pd.DataFrame`s and `hv.Dataset`s. This is a demonstration of how to visualize `DataFrame`-based data in HoloViews
