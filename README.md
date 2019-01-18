@@ -1,4 +1,4 @@
-# HoloViews tips
+# HoloViews notes
 
 This is my ongoing compilation of HoloViews snippets to accomplish particular tasks. One day this will actually be decently organized. PRs for your snippets / tips more than welcome.
 
