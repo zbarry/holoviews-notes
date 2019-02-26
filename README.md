@@ -2,6 +2,16 @@
 
 This is my ongoing compilation of HoloViews snippets to accomplish particular tasks. One day this will actually be decently organized. PRs for your snippets / tips more than welcome.
 
+## Bokeh tools
+
+Enable scroll wheel by default without the user having to click on it (untested):
+
+`.options(active_tools=['wheel_zoom'])`
+
+In general, to set an active tool, you also have to ensure it is already specified as a tool.
+
+`.options(tools=['a_bokeh_tool'], active_tools=['a_bokeh_tool'])`
+
 ## Legends
 
 `my_dataset.to(hv.DesiredElement).overlay('a_kdim')` will automatically generate a legend
